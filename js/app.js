@@ -16,6 +16,16 @@ const resetBtn = document.querySelector(".result__reset");
 function getBillForOnePerson() {
  resultBillPerPerson.textContent = Number(billAmount) / Number(numberOfPeople);
 }
+
+function getTipsPerPerson(){
+  for(let i = 0; i<percentBtns.length; i++){
+  if(percentBtns[i].checked == true){
+      resultTipsPerPerson.textContent =           getBillPerPerson().value * parseFloat(percentBtns[i].value) / 100
+  }
+}  
+}
+
 getResultBtn.addEventListener("click", function() {
   getBillForOnePerson();
+  getTipsPerPerson();
 });
