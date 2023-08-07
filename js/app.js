@@ -1,4 +1,4 @@
-"use strict";
+g"use strict";
 
 const switchLangBtn = document.querySelector(".splitter__language-switcher");
 const switcherDisk = document.querySelector(".switcher__disk");
@@ -15,6 +15,7 @@ const resetBtn = document.querySelector(".result__reset");
 
 function getBillForOnePerson() {
  resultBillPerPerson.textContent = Number(billAmount) / Number(numberOfPeople);
+return resultBillPerPerson.textContent;
 }
 
 function getTipsPerPerson(){
