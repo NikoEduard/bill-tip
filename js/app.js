@@ -14,7 +14,7 @@ const getResultBtn = document.querySelector(".result__btn");
 const resetBtn = document.querySelector(".result__reset");
 
 function getBillForOnePerson() {
-return resultBillPerPerson = Number(billAmount) / Number(numberOfPeople);
+ resultBillPerPerson.textContent = Number(billAmount) / Number(numberOfPeople);
 }
 getResultBtn.addEventListener("click", function() {
   getBillForOnePerson();
