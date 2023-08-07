@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bill & tip</title>
-    <link rel="stylesheet" href="./css/zero-style.css">
+    <link rel="stylesheet" href="./css/zero-style.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -13,45 +13,80 @@
         <div class="splitter__language">
           <p>Language / мова</p>
           <div class="splitter__language-switcher">
-               <div class="switcher__disk"></div>
+            <div class="switcher__disk"></div>
           </div>
         </div>
         <article class="splitter__calc">
           <div class="splitter__bill">
             <p class="splitter__bill-title">Bill</p>
-            <input type="text" name="" id="calc-bill" class="splitter__bill-amount" placeholder="0"/>
+            <input
+              type="text"
+              name=""
+              id="calc-bill"
+              class="splitter__bill-amount"
+              placeholder="0"
+            />
           </div>
           <div class="splitter__tips">
             <p class="splitter__tips-title">Selext tip %</p>
             <div class="splitter__tips-btns">
               <div class="five__percent percentage">
-                <input type="radio" name="percents" id="five-percent" />
+                <input
+                  type="radio"
+                  name="percents"
+                  id="five-percent"
+                  class="percent-btns"
+                  value="5%"
+                />
                 <label for="five-percent">5%</label>
               </div>
               <div class="ten__percent percentage">
-                <input type="radio" name="percents" id="ten-percent" />
+                <input
+                  type="radio"
+                  name="percents"
+                  class="percent-btns"
+                  id="ten-percent"
+                  value="10%"
+                />
                 <label for="ten-percent">10%</label>
               </div>
               <div class="fifteen__percent percentage">
-                <input type="radio" name="percents" id="fifteen-percent" />
+                <input
+                  type="radio"
+                  name="percents"
+                  class="percent-btns"
+                  id="fifteen-percent"
+                  value="15%"
+                />
                 <label for="fifteen-percent">15%</label>
               </div>
               <div class="twenty-five__percent percentage">
-                <input type="radio" name="percents" id="twenty-five-percent" />
+                <input
+                  type="radio"
+                  name="percents"
+                  id="twenty-five-percent"
+                  class="percent-btns"
+                  value="25%"
+                />
                 <label for="twenty-five-percent">25%</label>
               </div>
               <div class="fifty__percent percentage">
-                <input type="radio" name="percents" id="fifty-percent" />
-                <label for="fifty-percent">50%</label>
+                <input type="radio" name="percents" id="fifty-percent" class="percent-btns" value="50%"/>
+                <label for="fifty-percent" >50%</label>
               </div>
-              <div class="custom__percent">
-                <input type="text" name="" id="" placeholder="Custom" />
+              <div class="custom__percent percentage">
+                <input
+                  type="text"
+                  name=""
+                  id="custom__percent"
+                  placeholder="Custom"
+                />
               </div>
             </div>
           </div>
           <div class="splitter__peoples">
             <p class="splitter__peoples-title">Number of people</p>
-            <input type="text" name="" id="people__amount" placeholder="0"/>
+            <input type="text" name="" id="people__amount" placeholder="0" />
           </div>
         </article>
         <article class="splitter__result">
