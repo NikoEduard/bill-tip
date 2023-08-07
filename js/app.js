@@ -1,4 +1,4 @@
-g"use strict";
+"use strict";
 
 const switchLangBtn = document.querySelector(".splitter__language-switcher");
 const switcherDisk = document.querySelector(".switcher__disk");
