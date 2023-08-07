@@ -33,4 +33,7 @@ getResultBtn.addEventListener("click", function() {
 });
 switchLangBtn.addEventListener("click", function (){
   switcherDisk.classList.toggle("switch");
+  if(switcherDisk.classList.contains("switch")){
+    
+  }
 })
