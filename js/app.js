@@ -16,6 +16,6 @@ const resetBtn = document.querySelector(".result__reset");
 function getBillForOnePerson() {
 return resultBillPerPerson = Number(billAmount) / Number(numberOfPeople);
 }
-getResultBtn.addEventListener("touchstart", function() {
+getResultBtn.addEventListener("click", function() {
   getBillForOnePerson();
 });
