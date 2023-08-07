@@ -13,10 +13,9 @@ const resultBillPerPerson =
 const getResultBtn = document.querySelector(".result__btn");
 const resetBtn = document.querySelector(".result__reset");
 
-percentBtns.addEventListener("click", () => {
-  let percentCoefficient;
-  for (let i = 0; i < percentBtns.length; i++) {
-    percentCoefficient = parseFloat(percentBtns[i].value) / 100;
-  }
-  return percentCoefficient;
+function getBillForOnePerson() {
+return resultBillPerPerson = Number(billAmount) / Number(numberOfPeople);
+}
+getResultBtn.addEventListener("touchstart", function() {
+  getBillForOnePerson();
 });
