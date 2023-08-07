@@ -31,3 +31,6 @@ getResultBtn.addEventListener("click", function() {
   getBillForOnePerson();
   getTipsPerPerson();
 });
+switchLangBtn.addEventListener("click", function (){
+  switcherDisk.classList.toggle("onclick");
+})
