@@ -51,6 +51,7 @@
   border-radius: 50%;
   background-image: url(../images/united-kingdom.png);
   background-size: contain;
+  transition: all 0.2s ease-in-out;
 }
 .switch {
   transition: all 0.2s ease-in-out;
