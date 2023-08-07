@@ -51,6 +51,7 @@
   border-radius: 50%;
   background-image: url(../images/united-kingdom.png);
   background-size: contain;
+  transition: all 0.2s ease-in-out;
 }
 .switch {
   transition: all 0.2s ease-in-out;
@@ -185,7 +186,7 @@
   text-align: right;
   padding-left: 40px;
   padding-right: 17px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   background-image: url(../images/human-icon.png);
   background-color: #f3f9fa;
   background-repeat: no-repeat;
@@ -256,4 +257,30 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #00474b;
+}
+
+@media (max-width: 500px) {
+  .wrapper{
+    height: auto;
+    padding: 50px;
+  }
+  .splitter {
+    width: 375px;
+    height: 988px;
+    flex-direction: column;
+    gap: 32px;
+    padding: 57px 32px 32px 32px;
+  }
+  .splitter__calc {
+    width: 311px;
+  }
+  .percentage label{
+    width: 146px;
+  }
+  .custom__percent input{
+    width: 146px;
+  }
+  .splitter__result {
+    width: 327px;
+  }
 }
