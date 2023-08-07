@@ -32,5 +32,5 @@ getResultBtn.addEventListener("click", function() {
   getTipsPerPerson();
 });
 switchLangBtn.addEventListener("click", function (){
-  switcherDisk.classList.toggle("onclick");
+  switcherDisk.classList.toggle("switch");
 })
