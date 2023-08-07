@@ -8,15 +8,15 @@ const switchLangBtn = document.querySelector(".splitter__language-switcher"),
   numberOfPeople = document.querySelector("#people__amount");
 
 let getResultBtn = document.querySelector(".result__btn"),
-  resetBtn = document.querySelector(".result__reset"),
-  resultTipsPerPerson = document.querySelector(".result__tips-info"),
-  resultBillPerPerson = document.querySelector(".result__bill-info"),
-  billTitle = document.querySelector(".splitter__bill-title"),
-  tipsBtnsTitle = document.querySelector(".splitter__tips-title"),
-  numberOfPeopleTitle = document.querySelector(".splitter__peoples-title"),
-  billAmountTitle = document.querySelector(".amount__bill"),
-  tipsAmountTitle = document.querySelector(".amount__tips"),
-  perPersonTxt = document.querySelectorAll(".per__person");
+ resetBtn = document.querySelector(".result__reset"),
+ resultTipsPerPerson = document.querySelector(".result__tips-info"),
+ resultBillPerPerson = document.querySelector(".result__bill-info"),
+ billTitle = document.querySelector(".splitter__bill-title"),
+ tipsBtnsTitle = document.querySelector(".splitter__tips-title"),
+ numberOfPeopleTitle = document.querySelector(".splitter__peoples-title"),
+ billAmountTitle = document.querySelector(".amount__bill"),
+ tipsAmountTitle = document.querySelector(".amount__tips"),
+ perPersonTxt = document.querySelectorAll(".per__person");
 
 function getBillForOnePerson() {
   resultBillPerPerson.textContent = (
