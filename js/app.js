@@ -19,7 +19,7 @@ return resultBillPerPerson.textContent;
 }
 
 function getTipsPerPerson(){
-  let billPerPerson = getBillPerPerson();
+  let billPerPerson = getBillForOnePerson();
   for(let i = 0; i<percentBtns.length; i++){
   if(percentBtns[i].checked == true){
       resultTipsPerPerson.textContent = Number(billPerPerson) * parseFloat(percentBtns[i].value) / 100
