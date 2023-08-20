@@ -85,4 +85,5 @@ resetBtn.addEventListener("click", function () {
   numberOfPeople.value = "";
   resultBillPerPerson.textContent = "0.00";
   resultTipsPerPerson.textContent = "0.00";
+  customPercent.value = "";
 });
