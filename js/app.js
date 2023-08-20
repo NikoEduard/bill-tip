@@ -53,6 +53,8 @@ function getTipsPerPerson() {
 
 if (billAmount.value === '' && numberOfPeople.value === '') {
   getResultBtn.disabled = true
+} else {
+  getResultBtn.disabled = false;
 }
 
 getResultBtn.addEventListener("click", function () {
