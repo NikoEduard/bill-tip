@@ -27,13 +27,26 @@ function getBillForOnePerson() {
 function getTipsPerPerson() {
   let billPerPerson = getBillForOnePerson();
   for (let i = 0; i < percentBtns.length; i++) {
-    if (percentBtns[i].checked === true) {
+    if (percentBtns[i].checked === true && customPercent.value === '') {
       resultTipsPerPerson.textContent = (
         (Number(billPerPerson) * parseFloat(percentBtns[i].value)) /
         100
       ).toFixed(2);
       return Number(resultTipsPerPerson.textContent);
+    } else if(customPercent.value !== ''){
+      resultTipsPerPerson.textContent = (
+        (Number(billPerPerson) * parseFloat(customPercent.value)) /
+        100
+      ).toFixed(2);
+      return Number(resultTipsPerPerson.textContent);
     }
+    // if (customPercent.focus()) { 
+    //   resultTipsPerPerson.textContent = (
+    //     (Number(billPerPerson) * parseFloat(customPercent.textContent)) /
+    //     100
+    //   ).toFixed(2);
+    //   return Number(resultTipsPerPerson.textContent);
+    // }
   }
 }
 
