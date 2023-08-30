@@ -51,8 +51,14 @@ function getTipsPerPerson() {
 }
 
 getResultBtn.addEventListener("click", function () {
-  getBillForOnePerson();
-  getTipsPerPerson();
+  if (billAmount.value === '' && numberOfPeople.value === '') {
+    getResultBtn.disabled = true;
+  } else { 
+    getResultBtn.disabled = false;
+    getBillForOnePerson();
+    getTipsPerPerson();
+  }
+  
 });
 
 switchLangBtn.addEventListener("click", function () {
