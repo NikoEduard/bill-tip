@@ -51,13 +51,13 @@ function getTipsPerPerson() {
 }
 
 getResultBtn.addEventListener("click", function () {
-  if (billAmount.value === "" && numberOfPeople.value === "") {
-    getResultBtn.setAttribute("disabled");
-  } else if (getResultBtn.hasAttribute("disabled")) {
-    getResultBtn.removeAttribute("disabled");
+  // if (billAmount.value === "" && numberOfPeople.value === "") {
+  //   getResultBtn.setAttribute("disabled");
+  // } else if (getResultBtn.hasAttribute("disabled")) {
+  //   getResultBtn.removeAttribute("disabled");
+  // }
     getBillForOnePerson();
     getTipsPerPerson();
-  }
 });
 
 switchLangBtn.addEventListener("click", function () {
