@@ -52,7 +52,7 @@ function getTipsPerPerson() {
 
 getResultBtn.addEventListener("click", function () {
   if (billAmount.value === "" && numberOfPeople.value === "") {
-    getResultBtn.setAttribute("disabled", "");
+    getResultBtn.setAttribute("disabled");
   } else if (getResultBtn.hasAttribute("disabled")) {
     getResultBtn.removeAttribute("disabled");
     getBillForOnePerson();
