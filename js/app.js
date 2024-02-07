@@ -51,12 +51,11 @@ function getTipsPerPerson() {
 }
 
 getResultBtn.addEventListener("click", function () {
-  if (billAmount.value === "" && numberOfPeople.value === "") {
-    getResultBtn.setAttribute("disabled", "");
-  } else if (getResultBtn.hasAttribute("disabled")) {
-    getResultBtn.removeAttribute("disabled");
+  if (billAmount.value !== "" && numberOfPeople.value !== "") {
     getBillForOnePerson();
     getTipsPerPerson();
+  } else {
+    alert("Please fill in all fields.");
   }
 });
 
